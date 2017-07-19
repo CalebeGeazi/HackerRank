@@ -180,6 +180,9 @@ public class Solution {
 							}
 						}
 					}
+					
+					// the percentage of sorted elements are not high enough for a
+					// binary insertion sort to be effective, so justSort
 					else {
 						justSort(array, startingIndex, endingIndex);
 						continue;
@@ -190,14 +193,7 @@ public class Solution {
 			prevEndingIndex = endingIndex;
 		}
 
-		//System.out.println("=============================================");
-		//System.out.println("=============================================");
-		//System.out.println("=============================================");
-		//System.out.println("array = " + Arrays.toString(array));
 		System.out.println(array[index]);
-		//System.out.println("=============================================");
-		//System.out.println("=============================================");
-		//System.out.println("=============================================");
 		in.close();
 	}
 	
