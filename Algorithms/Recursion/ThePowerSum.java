@@ -10,7 +10,7 @@ public class ThePowerSum {
 	static int x = 0;
 	static int n = 0;
 
-	// recursive function to calculate power sums
+    // recursive function to calculate power sums
     static void thePowerSum(int sum, int index) {
     	// loop thru possible values
         for (int i = index; i < x; i++) {
