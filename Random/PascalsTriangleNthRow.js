@@ -16,12 +16,12 @@ function pascalsTriangleNthRow(n) {
   }
   
   // determine 2nd half of row based on if n is odd or even.
-  // if even, then the middle two numbers are the same so we can just
+  // if odd, then the middle two numbers are the same so we can just
   // duplicate the current row in reverse order.
   if (n % 2) {
     row = row.concat(row.slice(0,row.length).reverse());
   } 
-  // if odd, then duplicate the row in reverse order, but exclude the 
+  // if even, then duplicate the row in reverse order, but exclude the 
   // last number
   else {
     row = row.concat(row.slice(0,row.length-1).reverse());
